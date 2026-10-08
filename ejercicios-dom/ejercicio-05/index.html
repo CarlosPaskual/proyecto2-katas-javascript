@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metal Vault</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- defer espera a que exista todo el HTML antes de ejecutar el script -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">Metal Vault</a>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#albums">Álbumes</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Los clásicos del metal</h1>
+        <p>Una selección de álbumes que todo fan debería escuchar al menos una vez.</p>
+      </section>
+
+      <section class="albums" id="albums">
+        <h2>Álbumes imprescindibles</h2>
+        <!-- Aquí el script mete la lista de álbumes -->
+        <div data-function="printAlbums"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Metal Vault · Hecho con JavaScript</p>
+    </footer>
+  </body>
+</html>
